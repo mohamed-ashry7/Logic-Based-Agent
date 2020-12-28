@@ -89,6 +89,6 @@ goal(S):-
     members_loc(L),
     capacity(C),
     \+has_var(S),
-    call_with_depth_limit(helper_goal(Ex,Ey,L,C,s0,S),20,R),
+    call_with_depth_limit(helper_goal(Ex,Ey,L,C,s0,S),15,R),
     write(R),
     R\==depth_limit_exceeded.
